@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block title %}
+
+
+  <section>
+        <textarea><pre>
+            <code>
+#include <iostream>
+using namespace std;
+
+int main() {
+   //initialize array with no size specified
+   int arr1[] = {7, 3, 8, 7, 2};
+   //initialize array with size specified, but with fewer elements
+   int arr2[10] = {52, 78, 18, 92, 96, 69, 84};
+
+   //print arrays
+   for (int i=0; i < sizeof(arr1)/sizeof(*arr1); i++) {
+      cout << arr1[i] << "  ";
+   }
+   cout << endl;
+   for (int i=0; i < sizeof(arr2)/sizeof(*arr2); i++) {
+      cout << arr2[i] << "  ";
+   }
+}
+            </code>
+        </pre></textarea>
+        <script src="https://cdn.tiny.cloud/1/255hn1mq0c0kauesd2u4t0yfucajhozuhi4jqweyuw5imt7w/tinymce/5/tinymce.min.js"></script>
+            <script>
+                tinymce.init({
+                    selector: 'textarea',
+                    height: 500,
+                    plugins: '',
+                    toolbar: '',
+
+
+                });
+            </script>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
